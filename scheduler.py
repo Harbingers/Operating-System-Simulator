@@ -162,5 +162,7 @@ else:
     print 'to generate different problems for yourself.'
     print ''
 
-
-
+# Test
+# python scheduler.py -p FIFO -j 3 -s 100
+# python scheduler.py -p FIFO -j 3 -s 100 -c
+# python scheduler.py -p SJF -l 5,10,15
