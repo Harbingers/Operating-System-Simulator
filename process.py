@@ -3,7 +3,7 @@
 # 1. Each process by default has 3 open file descriptors: standard input, output and error
 #    These descriptors let programs easily read input from the terminal as well as print output to the screen
 # 2. Process States: Running, Ready, Blocked
-# 3. This program, allows you to see how the state of a process changes as it runs on a CPU
+# 3. This program, allows you to see how the state of a process changes and either use the CPU (e.g. perform an add instruction) or do I/O (e.g. send a request to a disk and wait for it to complete)
 # 4. To see options: prompt> python process-run.py -h
 #    Options:
 #      -h, --help            show this help message and exit
@@ -352,3 +352,42 @@ if options.print_stats:
     print 'Stats: CPU Busy %d (%.2f%%)' % (cpu_busy, 100.0 * float(cpu_busy)/clock_tick)
     print 'Stats: IO Busy  %d (%.2f%%)' % (io_busy, 100.0 * float(io_busy)/clock_tick)
     print ''
+
+
+# Test:
+# python process.py -l 5:100,5:100 -c
+# Time     PID: 0     PID: 1        CPU        IOs 
+#  1     RUN:cpu      READY          1            
+#  2     RUN:cpu      READY          1            
+#  3     RUN:cpu      READY          1            
+#  4     RUN:cpu      READY          1            
+#  5     RUN:cpu      READY          1            
+#  6        DONE    RUN:cpu          1            
+#  7        DONE    RUN:cpu          1            
+#  8        DONE    RUN:cpu          1            
+#  9        DONE    RUN:cpu          1            
+# 10        DONE    RUN:cpu          1 
+
+
+# python process.py -l 4:100,1:0 -c
+# Time     PID: 0     PID: 1        CPU        IOs 
+#  1     RUN:cpu      READY          1            
+#  2     RUN:cpu      READY          1            
+#  3     RUN:cpu      READY          1            
+#  4     RUN:cpu      READY          1            
+#  5        DONE     RUN:io          1            
+#  6        DONE    WAITING                     1 
+#  7        DONE    WAITING                     1 
+#  8        DONE    WAITING                     1 
+#  9        DONE    WAITING                     1 
+# 10*       DONE       DONE   
+
+# switch the order of the processes
+# python process.py -l 1:0,4:100 -c
+# Time     PID: 0     PID: 1        CPU        IOs 
+#  1      RUN:io      READY          1            
+#  2     WAITING    RUN:cpu          1          1 
+#  3     WAITING    RUN:cpu          1          1 
+#  4     WAITING    RUN:cpu          1          1 
+#  5     WAITING    RUN:cpu          1          1 
+#  6*       DONE       DONE  
