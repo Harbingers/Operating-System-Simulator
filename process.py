@@ -1,4 +1,3 @@
-
 # Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html
 
 # 1. Each process by default has 3 open file descriptors: standard input, output and error
