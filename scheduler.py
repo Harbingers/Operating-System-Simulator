@@ -9,6 +9,8 @@
 # 2. This program, scheduler.py, allows you to see how different schedulers perform under
 # scheduling metrics such as response time, turnaround time, and total wait time
 
+#! /usr/bin/env python
+
 import sys
 from optparse import OptionParser
 import random
@@ -159,3 +161,6 @@ else:
     print '-s <somenumber> or your own job list (-l 10,15,20 for example)'
     print 'to generate different problems for yourself.'
     print ''
+
+
+
