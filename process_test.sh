@@ -119,3 +119,23 @@ python process.py -s 1 -l 3:50,3:50, -s 2 -l 3:50,3:50, -s 3 -l 3:50,3:50 -I IO_
 # Stats: Total Time 13
 # Stats: CPU Busy 6 (46.15%)
 # Stats: IO Busy  9 (69.23%)
+
+python process.py -s 1 -l 3:50,3:50, -s 2 -l 3:50,3:50, -s 3 -l 3:50,3:50 -I IO_RUN_IMMEDIATE -c -p
+# Time     PID: 0     PID: 1        CPU        IOs 
+#  1     RUN:cpu      READY          1            
+#  2      RUN:io      READY          1            
+#  3     WAITING     RUN:io          1          1 
+#  4     WAITING    WAITING                     2 
+#  5     WAITING    WAITING                     2 
+#  6     WAITING    WAITING                     2 
+#  7*    RUN:cpu    WAITING          1          1 
+#  8*       DONE     RUN:io          1            
+#  9        DONE    WAITING                     1 
+# 10        DONE    WAITING                     1 
+# 11        DONE    WAITING                     1 
+# 12        DONE    WAITING                     1 
+# 13*       DONE    RUN:cpu          1            
+
+# Stats: Total Time 13
+# Stats: CPU Busy 6 (46.15%)
+# Stats: IO Busy  9 (69.23%)
