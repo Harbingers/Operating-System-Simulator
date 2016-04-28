@@ -2,11 +2,11 @@
 
 # 1. Each process by default has 3 open file descriptors: standard input, output and error
 #    These descriptors let programs easily read input from the terminal as well as print output to the screen
-
+#
 # 2. Process States: Running, Ready, Blocked
-
+#
 # 3. This program, allows you to see how the state of a process changes and either use the CPU (e.g. perform an add instruction) or do I/O (e.g. send a request to a disk and wait for it to complete)
-
+#
 # 4. To see options: prompt> python process-run.py -h
 #    Options:
 #      -h, --help            show this help message and exit
