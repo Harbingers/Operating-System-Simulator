@@ -24,7 +24,7 @@
 1. disks   <br />
 2. raid: redundant arrays of inexpensive disks  <br />
 3. fs intro  <br />
-4. fs implement  <br />
-5. afs  <br />
+4. fs implement: very simple file system <br />
+5. afs: andrew file system  <br />
 
 Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html
