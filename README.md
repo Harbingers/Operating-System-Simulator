@@ -15,12 +15,16 @@
 12. TLBs  <br />
 13. Multi-level Paging  <br />
 14. Paging Policy  <br />
-15. Threads (Into)  <br />
-16. Threads (Locks)  <br />
-17. Disks   <br />
-18. RAID  <br />
-19. FS Intro  <br />
-20. FS Implement  <br />
-21. AFS  <br />
+ 
+<b> Concurrency </b>
+1. Threads (Into)  <br />
+2. Threads (Locks)  <br />
+
+<b> Persistence</b>
+1. Disks   <br />
+2. RAID  <br />
+3. FS Intro  <br />
+4. FS Implement  <br />
+5. AFS  <br />
 
 Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html
