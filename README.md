@@ -10,7 +10,7 @@
 7. vm api <br />
 8. relocation: mechanism - address translation <br />
 9. segmentation  <br />
-10. free space  <br />
+10. malloc: free space  <br />
 11. paging  <br />
 12. tlbs  <br />
 13. multi-level paging  <br />
