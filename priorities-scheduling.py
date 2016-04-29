@@ -1,3 +1,5 @@
+# Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
+
 # Rule 1: If Priority(A) > Priority(B), A runs (B doesn’t).
 # Rule 2: If Priority(A) = Priority(B), A & B run in RR.
 # Rule 3: When a job enters the system, it is placed at the highest priority (the topmost queue).
