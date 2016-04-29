@@ -7,24 +7,24 @@
 4. scheduler<br />
 5. priority scheduling: multi-level feedback queue <br />
 6. lottery scheduling <br />
-7. VM API  <br />
-8. Relocation: mechanism - address translation <br />
-9. Segmentation  <br />
-10. Free Space  <br />
-11. Paging  <br />
-12. TLBs  <br />
-13. Multi-level Paging  <br />
-14. Paging Policy  <br />
+7. vm api <br />
+8. relocation: mechanism - address translation <br />
+9. segmentation  <br />
+10. free space  <br />
+11. paging  <br />
+12. tlbs  <br />
+13. multi-level paging  <br />
+14. paging policy  <br />
  
 <b> Concurrency </b><br />
-1. Threads (Into)  <br />
-2. Threads (Locks)  <br />
+1. threads (into)  <br />
+2. threads (locks)  <br />
 
 <b> Persistence</b><br />
-1. Disks   <br />
-2. RAID  <br />
-3. FS Intro  <br />
-4. FS Implement  <br />
-5. AFS  <br />
+1. disks   <br />
+2. raid  <br />
+3. fs intro  <br />
+4. fs implement  <br />
+5. afs  <br />
 
 Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html
