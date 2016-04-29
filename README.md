@@ -11,7 +11,7 @@
 8. relocation: mechanism - address translation <br />
 9. segmentation  <br />
 10. malloc: free space  <br />
-11. paging  <br />
+11. paging: linear translate  <br />
 12. tlbs  <br />
 13. multi-level paging  <br />
 14. paging policy  <br />
