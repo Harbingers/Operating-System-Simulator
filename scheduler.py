@@ -9,6 +9,11 @@
 # 2. This program, scheduler.py, allows you to see how different schedulers perform under
 # scheduling metrics such as response time, turnaround time, and total wait time
 
+# 3. Test
+# python scheduler.py -p FIFO -j 3 -s 100
+# python scheduler.py -p FIFO -j 3 -s 100 -c
+# python scheduler.py -p SJF -l 5,10,15
+
 #! /usr/bin/env python
 
 import sys
