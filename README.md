@@ -8,7 +8,7 @@
 5. priority scheduling: multi-level feedback queue <br />
 6. lottery scheduling <br />
 7. VM API  <br />
-8. Relocation  <br />
+8. Relocation: mechanism - address translation <br />
 9. Segmentation  <br />
 10. Free Space  <br />
 11. Paging  <br />
