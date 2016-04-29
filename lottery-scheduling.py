@@ -1,3 +1,5 @@
+# Reference: http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf
+
 # Options:
 #  -h, --help            
 #      show this help message and exit
