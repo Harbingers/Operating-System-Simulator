@@ -39,8 +39,8 @@
 
 # Test
 # create a randomly-generated three-job workload
-# python scheduling-with-priorities.py -j 3 -c
-# python scheduling-with-priorities.py --jlist 0,180,0:100,20,0 -Q 10,10,10
+# python priorities-scheduling.py -j 3 -c
+# python priorities-scheduling.py --jlist 0,180,0:100,20,0 -Q 10,10,10
 
 #! /usr/bin/env python
 
