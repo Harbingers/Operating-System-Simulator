@@ -16,11 +16,11 @@
 13. Multi-level Paging  <br />
 14. Paging Policy  <br />
  
-<b> Concurrency </b>
+<b> Concurrency </b><br />
 1. Threads (Into)  <br />
 2. Threads (Locks)  <br />
 
-<b> Persistence</b>
+<b> Persistence</b><br />
 1. Disks   <br />
 2. RAID  <br />
 3. FS Intro  <br />
