@@ -5,7 +5,7 @@
 2. process api  <br />
 3. direct execution  <br />
 4. scheduler<br />
-5. scheduling with priorities: multi-level feedback queue <br />
+5. priority scheduling: multi-level feedback queue <br />
 6. lottery scheduling <br />
 7. VM API  <br />
 8. Relocation  <br />
